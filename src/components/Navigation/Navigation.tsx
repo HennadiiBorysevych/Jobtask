@@ -8,7 +8,7 @@ const Navigation = () => {
   return (
     <Header>
       <Nav>
-        {/* <Link to="/"> */}
+        <Link to="/">
           <img
             onClick={() => {
               return <Example />;
@@ -16,7 +16,7 @@ const Navigation = () => {
             src={boy}
             alt="me"
           />
-        {/* </Link> */}
+        </Link>
         <FormInput type="text" placeholder="Enter Name for search" />
       </Nav>
     </Header>

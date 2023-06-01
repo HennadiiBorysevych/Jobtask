@@ -5,7 +5,6 @@ import { IUser } from "../../types/types";
 import { Users } from "../../API";
 import { UsersList, LoadMoreButton } from "./CardList.styled";
 
-import Navigation from "../Navigation/Navigation";
 import CardItem from "../CardItem/CardItem";
 
 const usersData = new Users();
