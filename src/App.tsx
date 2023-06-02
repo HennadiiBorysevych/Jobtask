@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}>
           <Route index element={<CardList />} />
-          <Route path="/tweets" element={<Tweets />} />
+          <Route path="tweets/:UserId" element={<Tweets />} />
         </Route>
       </Routes>
     </>

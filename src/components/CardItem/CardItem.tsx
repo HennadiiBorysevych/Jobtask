@@ -10,6 +10,7 @@ import {
 } from "./CardItem.styled";
 
 import { IUser } from "../../types/types";
+import { addCommaToNumber } from "../../utils/utils";
 
 import main from "../../assets/main.svg";
 import line from "../../assets/line.svg";
@@ -64,11 +65,14 @@ const CardItem = ({ avatar, user, followers, tweets, id }: IUser) => {
         <Line src={line} alt="line" />
       </ImageWrapper>
       <UserInfo>{newCard?.user ? newCard?.user : user}</UserInfo>
-      <Link to="/tweets">
+      <Link to={`/tweets/${id}`}>
         <UserInfo>{newCard?.tweets ? newCard?.tweets : tweets} tweets</UserInfo>
       </Link>
       <UserInfo>
-        {newCard?.followers ? newCard?.followers : followers} Followers
+        {newCard?.followers
+          ? addCommaToNumber(newCard?.followers)
+          : addCommaToNumber(followers)}{" "}
+        Followers
       </UserInfo>
 
       <Button

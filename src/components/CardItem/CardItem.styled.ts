@@ -40,7 +40,6 @@ export const Button = styled.button`
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  padding: ;
   text-transform: uppercase;
   color: #373737;
   outline: none;

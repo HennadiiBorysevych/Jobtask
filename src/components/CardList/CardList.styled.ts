@@ -21,3 +21,12 @@ export const LoadMoreButton = styled.button`
   margin-top: 10px;
   border: none;
 `;
+
+export const NoUsers = styled.li`
+  font-size: 40px;
+  list-style: none;
+  align-self: center;
+  width: 100%;
+  height: 50vh;
+  margin-top: 15%;
+`;

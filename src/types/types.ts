@@ -11,3 +11,7 @@ export type IUserFollow = {
   tweets: number;
   user: string;
 };
+export type IPost = {
+  date: Date;
+  text: string;
+};

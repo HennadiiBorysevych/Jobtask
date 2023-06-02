@@ -36,7 +36,18 @@ export class Users {
       throw new Error(`${error}`);
     }
   };
-
+  getUser = async (id: string) => {
+    const res = await fetch(`${BaseURL}/folowers/users/${id}`);
+    return await res.json();
+  };
+  getAllUsers = async () => {
+    try {
+      const res = await fetch(`${BaseURL}/folowers/users`);
+      return await res.json();
+    } catch (error) {
+      throw new Error(`${error}`);
+    }
+  };
   set nextPage(newPage: number) {
     this.page = newPage;
   }

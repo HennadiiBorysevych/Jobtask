@@ -1,8 +1,6 @@
-import boy from "../../assets/boy.svg";
-import { Header, Nav, FormInput } from "./Navigation.styled";
+import me from "../../assets/me.jpg";
+import { Header, Nav } from "./Navigation.styled";
 import { Link } from "react-router-dom";
-
-import Example from "../../components/PopUp/PopUp";
 
 const Navigation = () => {
   return (
@@ -10,14 +8,11 @@ const Navigation = () => {
       <Nav>
         <Link to="/">
           <img
-            onClick={() => {
-              return <Example />;
-            }}
-            src={boy}
+            style={{ width: 80, height: 80, borderRadius: "50%" , position:'absolute'}}
+            src={me}
             alt="me"
           />
         </Link>
-        <FormInput type="text" placeholder="Enter Name for search" />
       </Nav>
     </Header>
   );
