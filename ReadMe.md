@@ -48,6 +48,8 @@ npm install</code></pre>
     <ul>
       <li><code>components/</code>: Contains reusable components.</li>
       <li><code>pages/</code>: Contains different pages of the application (e.g., Home, Tweets).</li>
+      <li><code>types/</code>: Contains different types of the application.</li>
+      <li><code>utils/</code>: Contains functions helpers</li>
       <li><code>App.tsx</code>: Entry point of the application.</li>
       <li><code>main.tsx</code>: Renders the root component.</li>
     </ul>
